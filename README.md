@@ -181,7 +181,7 @@ Check supported modulation, and transmission rate table from the connected WiFi
 ```ruby
 sudo cat /sys/kernel/debug/ieee80211/phy0/netdev:wlp1s0/stations/XX:XX:XX:XX:XX:XX/rate_scale_table
 ```
-Set the transmit rate from the checked table. In our case, we set as 0x4007 (16-QAM, 1/2).
+Set the transmit rate from the checked table. In our case, we set it as 0x4007 (16-QAM, 1/2).
 ```ruby
 echo 0x4007 | sudo tee /sys/kernel/debug/ieee80211/phy0/netdev:wlp1s0/stations/XX:XX:XX:XX:XX:XX/rate_scale_table
 ```
@@ -206,7 +206,7 @@ where the camera parameters constructed [Camera ID] [Pic Save Interval] [Whether
 
 [Whether Auto Exit]: This parameter controls whether the program automatically exits when CSI collect stops.When set to 0,This program will always run. When set to 1,This program will automatically exit when no CSI is acquired within 1 second.
 ```ruby
-cd CSI-Camera-Synchronization-Toolkit/supplementary/netlink/camera 0 0 1
+cd CSI-Camera-Synchronization-Toolkit/supplementary/netlink/camera 0 1 0
 ```
 Open another kernel terminal
 ```ruby
@@ -216,5 +216,5 @@ Open another kernel terminal,
 
 where, ping testing is a way to encourage the collection of more CSI samples.
 ```ruby
-ping 192.xxx.xx.xx -i 0.2
+ping 192.xxx.xx.xx -i 0.3
 ```
