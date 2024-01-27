@@ -1,28 +1,34 @@
 # IEEE-802.11n-CSI-Camera-Synchronization-Toolkit
 * This repository is a part of an RF-based mobility detection and tracking project.
-* The goal of our research is to develop technology to recognize and track the posture of objects beyond walls using only WiFi signals.
+* The goal of our research is to develop technology to recognize and track objects beyond walls using solely WiFi signals in the IEEE standards.
   
 The purpose of this repository is to provide support for building the CSI-enabled **TP-Link AC1750** Wi-Fi drivers for Intel Wireless Link **Intel 5300 NIC** adapters on Linux distributions with **Unbuntu 14.01** versions. At this point, this code has been tested on Ubuntu **14.01**, **16.04**, and **18.04**.
 
-The code presented here comprises of a modified version of the Linux kernel, such as the firmware command, and error lines of the original baseline. The modifications were made by examining the code provided by [dhalperi/linux-80211n-csitool](https://github.com/dhalperi/linux-80211n-csitool) and adapting them to more recent Linux kernel versions **- iwlwifi** and **wlp1s0** modules. The building and installation instructions were taken from [the original Linux 802.11n CSI Tool website](https://dhalperi.github.io/linux-80211n-csitool/) and adapted accordingly. Moreover, I referred to the synchronization method between CSI and Camera from [CSI-Tool-Camera-Shooting](https://github.com/qiyinghua/CSI-Tool-Camera-Shooting).
+The code presented here comprises a modified version of the Linux kernel, such as the firmware command, and error lines of the original baseline. The modifications were made by examining the code provided by [dhalperi/linux-80211n-csitool](https://github.com/dhalperi/linux-80211n-csitool) and adapting them to more recent Linux kernel versions **- iwlwifi** and **wlp1s0** modules. The building and installation instructions were taken from [the original Linux 802.11n CSI Tool website](https://dhalperi.github.io/linux-80211n-csitool/) and adapted accordingly. Moreover, I referred to the synchronization method between CSI and Camera from [CSI-Tool-Camera-Shooting](https://github.com/qiyinghua/CSI-Tool-Camera-Shooting).
 
-Additionally, there have been initial toolkit issues discussed among mobility detection researchers who use WiFi signals and Channel State Information (CSI). To this end, we provide a calculation function **newly_csi_analyzer.m** of amplitude and phase, and signal processing from the acquired CSI. Herein, I referred to novel approaches [DensePose From WiFi](https://arxiv.org/abs/2301.00250) and [Can WiFi Estimate Person Pose?](https://arxiv.org/abs/1904.00277)
+Additionally, there have been initial toolkit issues discussed among mobility detection researchers who use WiFi signals and Channel State Information (CSI). To this end, we provide a calculation function **newly_csi_analyzer.m** of amplitude and phase, and signal processing from the acquired CSI samples. Herein, I referred to novel approaches [DensePose From WiFi](https://arxiv.org/abs/2301.00250) and [Can WiFi Estimate Person Pose?](https://arxiv.org/abs/1904.00277).
 
 # Project Members
-### Youngwoo Oh (Master's student, Project Leader from May 2023 to Feb. 2024) 
-- developer of RF and Camera sensor fusion data and signal processing, and project configuration.
+### Youngwoo Oh (M.S. student, Project Leader from May 2023 to Feb. 2024) 
+- Integrated two sensing values including RF signals and captured video from the router and Camera by developing these Linux toolkit codes.
+- Signal processing, and project software and hardware configuration.
 
 ### Islam Helemy (Ph.D. student, Project Member)
-- Responsible for the development of the Multi-modal AI and the preprocessing of RF signals and camera sensors.
+- Responsible for the development of the Multi-modal AI and the pre-processing to generate training data pairs (CSI samples-captured images).
+- He will receive a *project leader* position on this future project after Feb. 2024.
 
 ### Iftikhar Ahmad (Ph.D. student, Project Member)
-- Focused on developing the Teacher network in the multi-modal AI model and optimizing the neural network.
+- Focused on developing the Teacher network in the multi-modal AI model.
 
-### Manal Mosharaf (Master's student, Project Member)
-- Engaged in developing the Student network in the multi-modal AI model and optimizing the neural network.
+### Manal Mosharaf (M.S. student, Project Member)
+- Engaged in developing the Student network in the multi-modal AI model.
 
-### Jungtae Kang (Undergraduate student, Contributor)
+### Jungtae Kang (Undergraduate student, Project Follower)
 - Supporting the generation of CSI samples and Camera images.
+- Writing Winter Conference on Korea Information and Communications Society (KICS) conference papers named *Collection and analysis of CSI in IEEE 802.11n wireless LAN environment for WiFi signal-based human mobility detection* and *Design of WiFi signal-based Multi-modal KNN deep learning approaches for improving anomaly object detection and classification methods*.
+- He will follow up on this *Novel multi-modal approaches-based object detection/tracking/recognition methods* in his future research.
+
+  
 
 # 1. Installation instructions of integrated CSI toolkit
 ## (1). Kernel version:
@@ -102,7 +108,7 @@ sudo ln -s iwlwifi-5000-2.ucode.sigcomm2010 /lib/firmware/iwlwifi-5000-2.ucode
 make -C CSI-Camera-Synchronization-Toolkit/supplementary/netlink
 ```
 
-## (7). Unzip OpenCV for utlizing USB camera:
+## (7). Unzip OpenCV for utlizing the USB camera:
 ```ruby
 cd CSI-Camera-Synchronization-Toolkit/camera_tool
 ```
@@ -138,7 +144,7 @@ sudo ldconfig
 ```ruby
 sudo gedit /etc/bash.bashrc
 ```
-Then add the following command to the end of file:
+Then add the following command to the end of the file:
 ```ruby
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
 ```
@@ -161,7 +167,7 @@ Then add the /usr/local/lib command to the file.
 make
 ```
 
-# 2. Guildline Operation of integrated CSI toolkit
+# 2. Guideline Operation of integrated CSI toolkit
 ## (1). setting of the WiFi router and wireless LAN card:
 The below comments (1) only need to be performed once after turning on the computer.
 ```ruby
@@ -173,11 +179,11 @@ sudo modprobe -r iwlwifi mac80211
 ```ruby
 sudo modprobe iwlwifi connector_log=0x1
 ```
-The below comment return MAC address, such as XX:XX:XX:XX:XX:XX.
+The below comment returns the MAC address, such as XX:XX:XX:XX:XX:XX.
 ```ruby
 sudo ls /sys/kernel/debug/ieee80211/phy0/netdev:wlp1s0/stations/
 ```
-Check supported modulation, and transmission rate table from the connected WiFi
+Check the supported modulation, and transmission rate table from the connected WiFi
 ```ruby
 sudo cat /sys/kernel/debug/ieee80211/phy0/netdev:wlp1s0/stations/XX:XX:XX:XX:XX:XX/rate_scale_table
 ```
@@ -192,7 +198,7 @@ echo 0x4007 | sudo tee /sys/kernel/debug/ieee80211/phy0/iwlwifi/iwldvm/debug/bca
 echo 0x4007 | sudo tee /sys/kernel/debug/ieee80211/phy0/iwlwifi/iwldvm/debug/monitor_tx_rate
 ```
 
-## (2). Starting this toolkit program (utlized three kernel terminals):
+## (2). Starting this toolkit program (utilized three kernel terminals):
 ```ruby
 sudo dhclient wlp1s0
 ```
@@ -200,21 +206,19 @@ comment under kernel terminal,
 
 where the camera parameters constructed [Camera ID] [Pic Save Interval] [Whether Auto Exit]
 
-[Camera ID]: This parameter controls which camera to use when the computer has multiple cameras.When set to 0, the program will use the first camera. When set to 1, the program will use the second camera. And so on.
+[Camera ID]: This parameter controls which camera to use when the computer has multiple cameras. When set to 0, the program will use the first camera. When set to 1, the program will use the second camera. And so on.
 
 [Pic Save Interval]: This parameter controls the speed at which images are saved. When set to 0, the program will save each frame of the camera. When set to 1, the program will save an image every other frame. And so on.
 
-[Whether Auto Exit]: This parameter controls whether the program automatically exits when CSI collect stops.When set to 0,This program will always run. When set to 1,This program will automatically exit when no CSI is acquired within 1 second.
+[Whether Auto Exit]: This parameter controls whether the program automatically exits when CSI collects stops. When set to 0, This program will always run. When set to 1, This program will automatically exit when no CSI is acquired within 1 second.
 ```ruby
 cd CSI-Camera-Synchronization-Toolkit/supplementary/netlink/camera 0 1 0
 ```
-Open another kernel terminal
+Open another kernel terminal to execute 'log_to_file' :
 ```ruby
 cd CSI-Camera-Synchronization-Toolkit/supplementary/netlink/log_to_file test.dat
 ```
-Open another kernel terminal,
-
-where, ping testing is a way to encourage the collection of more CSI samples.
+Open another kernel terminal, where ping testing is a way to encourage the collection of more CSI samples.
 ```ruby
 ping 192.xxx.xx.xx -i 0.3
 ```
