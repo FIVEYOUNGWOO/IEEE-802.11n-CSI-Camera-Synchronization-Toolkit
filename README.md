@@ -30,7 +30,8 @@ Additionally, there have been initial toolkit issues discussed among mobility de
 
 # Toolkit Demonstration
 - The demonstration video is uploaded to [YouTube channel](https://www.youtube.com/watch?v=X-kNQRrQUlE).
-![159](https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/assets/96539912/7b9c8e9a-9d14-4281-94cc-a61122007087)
+- 
+![159](https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/assets/96539912/7b9c8e9a-9d14-4281-94cc-a61122007087){: width="400" height="400"}
 
 # 1. Installation instructions of integrated CSI toolkit
 ## (1). Kernel version:
