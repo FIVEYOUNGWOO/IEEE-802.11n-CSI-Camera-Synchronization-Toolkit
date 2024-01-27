@@ -204,21 +204,23 @@ sudo dhclient wlp1s0
 ```
 comment under kernel terminal, 
 
-where the camera parameters constructed [Camera ID] [Pic Save Interval] [Whether Auto Exit]
+where the camera parameters constructed [*Camera ID*] [*Save Interval*] [*Auto Exit*]
 
-[Camera ID]: This parameter controls which camera to use when the computer has multiple cameras. When set to 0, the program will use the first camera. When set to 1, the program will use the second camera. And so on.
+[*Camera ID*]: This parameter controls which camera to use when the computer has multiple cameras. When set to 0, the program will use the first camera. When set to 1, the program will use the second camera.
 
-[Pic Save Interval]: This parameter controls the speed at which images are saved. When set to 0, the program will save each frame of the camera. When set to 1, the program will save an image every other frame. And so on.
+[*Save Interval*]: This parameter controls the speed at which images are saved. When set to 0, the program will save each frame of the camera. When set to 1, the program will save an image every other frame.
 
-[Whether Auto Exit]: This parameter controls whether the program automatically exits when CSI collects stops. When set to 0, This program will always run. When set to 1, This program will automatically exit when no CSI is acquired within 1 second.
+[*Auto Exit*]: This parameter controls whether the program automatically exits when CSI collects stops. When set to 0, This program will always run. When set to 1, This program will automatically exit when no CSI is acquired within 1 second.
+
+Open the first Linux kernel and write the below command:
 ```ruby
 cd CSI-Camera-Synchronization-Toolkit/supplementary/netlink/camera 0 1 0
 ```
-Open another kernel terminal to execute 'log_to_file' :
+Open the second Linux kernel to execute 'log_to_file':
 ```ruby
 cd CSI-Camera-Synchronization-Toolkit/supplementary/netlink/log_to_file test.dat
 ```
-Open another kernel terminal, where ping testing is a way to encourage the collection of more CSI samples.
+Open another kernel terminal, where ping testing is a way to encourage the collection of more CSI samples:
 ```ruby
 ping 192.xxx.xx.xx -i 0.3
 ```
