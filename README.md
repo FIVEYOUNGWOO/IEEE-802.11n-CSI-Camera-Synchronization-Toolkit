@@ -9,24 +9,24 @@ The code presented here comprises a modified version of the Linux kernel, such a
 Additionally, there have been initial toolkit issues discussed among mobility detection researchers who use WiFi signals and Channel State Information (CSI). To this end, we provide a calculation function **newly_csi_analyzer.m** of amplitude and phase, and signal processing from the acquired CSI samples. Herein, I referred to novel approaches [DensePose From WiFi](https://arxiv.org/abs/2301.00250) and [Can WiFi Estimate Person Pose?](https://arxiv.org/abs/1904.00277).
 
 # Project Members
-#### Youngwoo Oh (M.S. student, Project Leader from May 2023 to Feb. 2024) 
+#### [Youngwoo Oh (M.S. student, Project leader from May 2023 to Feb. 2024)](https://ohyoungwoo.com/)
 - Integrated two sensing values including RF signals and captured video from the router and Camera by developing these Linux toolkit codes.
 - Signal processing, and project software and hardware configuration.
 
-#### Islam Helemy (Ph.D. student, Project Member)
-- Responsible for the development of the Multi-modal AI and the pre-processing to generate training data pairs (CSI samples-captured images).
-- He will receive a *project leader* position on this future project after Feb. 2024.
-
-#### Iftikhar Ahmad (Ph.D. student, Project Member)
-- Focused on developing the Teacher network in the multi-modal AI model.
-
-#### Manal Mosharaf (M.S. student, Project Member)
-- Engaged in developing the Student network in the multi-modal AI model.
-
-#### [Jungtae Kang (Undergraduate student, Project Follower)](https://kangjeongtae.com/)
+#### [Jungtae Kang (Undergraduate student, Project follower)](https://kangjeongtae.com/)
 - Supporting the generation of CSI samples and Camera images.
 - Writing [Winter Conference on Korea Information and Communications Society (KICS) conference](https://conf.kics.or.kr/) papers named *Collection and analysis of CSI in IEEE 802.11n wireless LAN environment for WiFi signal-based human mobility detection* and *Design of WiFi signal-based Multi-modal KNN deep learning approaches for improving anomaly object detection and classification methods*.
 - He will follow up on this *Novel multi-modal approaches-based object detection/tracking/recognition methods* in his future research.
+  
+#### Islam Helemy (Ph.D. student, Project member)
+- Responsible for the development of the Multi-modal AI and the pre-processing to generate training data pairs (CSI samples-captured images).
+- He will receive a *project leader* position on this future project after Feb. 2024.
+
+#### Iftikhar Ahmad (Ph.D. student, Project member)
+- Focused on developing the Teacher network in the multi-modal AI model.
+
+#### Manal Mosharaf (M.S. student, Project member)
+- Engaged in developing the Student network in the multi-modal AI model.
 
   
 
