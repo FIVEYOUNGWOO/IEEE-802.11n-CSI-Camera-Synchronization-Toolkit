@@ -30,7 +30,7 @@ Additionally, there have been initial toolkit issues discussed among mobility de
 
 # Toolkit Demonstration
 - The demonstration video is uploaded to [YouTube channel](https://www.youtube.com/watch?v=X-kNQRrQUlE).
-  
+![159](https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/assets/96539912/7b9c8e9a-9d14-4281-94cc-a61122007087)
 
 # 1. Installation instructions of integrated CSI toolkit
 ## (1). Kernel version:
@@ -39,8 +39,7 @@ Before proceeding further, you need to check the version of your kernel. It shou
 uname -r
 ```
 
-## (2). First downl![159](https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/assets/96539912/7b9c8e9a-9d14-4281-94cc-a61122007087)
-oad the essential packages:
+## (2). First download the essential packages:
 ```ruby
 sudo apt-get install build-essential linux-headers-$(uname -r) git-core
 ```
