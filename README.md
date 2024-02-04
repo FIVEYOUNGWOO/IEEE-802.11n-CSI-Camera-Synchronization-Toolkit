@@ -1,22 +1,23 @@
 # IEEE-802.11n-CSI-Camera-Synchronization-Toolkit
-* This repository is a part of an RF-based mobility detection and tracking project.
+* This repository is a part of a WiFi signal-based human detection and motion estimation project.
 * The goal of our research is to develop technology to recognize and track objects beyond walls using solely WiFi signals in the IEEE standards.
   
-The purpose of this repository is to provide support for building the CSI-enabled **TP-Link AC1750** Wi-Fi drivers for Intel Wireless Link **Intel 5300 NIC** adapters on Linux distributions with **Unbuntu 14.01** versions. At this point, this code has been tested on Ubuntu **14.01**, **16.04**, and **18.04**.
+This repository's purpose is to support building the CSI-enabled **TP-Link AC1750** Wi-Fi drivers for Intel Wireless Link **Intel 5300 NIC** adapters on Linux distributions with **Unbuntu 14.01** versions. At this point, this code has been tested on Ubuntu **14.01**, **16.04**, and **18.04**.
 
 The code presented here comprises a modified and merged version of the Linux kernel, such as the firmware command, and error lines of the original baseline. The modifications were made by examining the code provided by [dhalperi/linux-80211n-csitool](https://github.com/dhalperi/linux-80211n-csitool) and adapting them to more recent Linux kernel versions **- iwlwifi** and **wlp1s0** modules. The building and installation instructions were taken from [the original Linux 802.11n CSI Tool website](https://dhalperi.github.io/linux-80211n-csitool/) and adapted accordingly. Moreover, I referred to the synchronization method between CSI and Camera from [CSI-Tool-Camera-Shooting](https://github.com/qiyinghua/CSI-Tool-Camera-Shooting).
 
-Additionally, there have been initial toolkit issues discussed among mobility detection researchers who use WiFi signals and Channel State Information (CSI). To this end, we provide a calculation function **newly_csi_analyzer.m** of amplitude and phase, and signal processing from the acquired CSI samples. Herein, I referred to novel approaches [DensePose From WiFi](https://arxiv.org/abs/2301.00250) and [Can WiFi Estimate Person Pose?](https://arxiv.org/abs/1904.00277).
+Additionally, initial toolkit issues have been discussed among mobility detection researchers using WiFi signals and Channel State Information (CSI). To this end, we provide a calculation function **newly_csi_analyzer.m** of amplitude and phase, and signal processing from the acquired CSI samples. Herein, I referred to novel approaches [DensePose From WiFi](https://arxiv.org/abs/2301.00250) and [Can WiFi Estimate Person Pose?](https://arxiv.org/abs/1904.00277).
 
 # Project Members
-#### [Youngwoo Oh (M.S. student, Project leader from May 2023 to Feb. 2024)](https://ohyoungwoo.com/)
-- Integrated two sensing values including RF signals and captured video from the router and Camera by developing these Linux toolkit codes.
-- Signal processing, and project software and hardware configuration.
+#### [Youngwoo Oh (M.S. student, Project leader from May 2023 to Feb. 2024 (for 9 months)](https://ohyoungwoo.com/)
+- Integrated data fusion between WiFi signals and captured video from the router and camera by developing these Linux toolkit codes.
+- Responsible for signal processing and project SW and HW configuration.
+- Constructed a Teacher-Student approach to detect and track beyond walls and obstacles.
 
 #### [Jungtae Kang (Undergraduate student, Project follower)](https://kangjeongtae.com/)
 - Supporting the generation of CSI samples and Camera images.
 - Writing [Winter Conference on Korea Information and Communications Society (KICS) conference](https://conf.kics.or.kr/) papers named "*Collection and analysis of CSI in IEEE 802.11n wireless LAN environment for WiFi signal-based human mobility detection*".
-- He will follow up on this "*Novel multi-modal approaches-based object detection/tracking/recognition methods*" in his future research.
+- In his future research, he will follow up on this "*Novel multi-modal approaches-based object detection/tracking/recognition methods*".
   
 #### Islam Helemy (Ph.D. student, Project member)
 - Responsible for the development of the Multi-modal AI and the pre-processing to generate training data pairs (CSI samples-captured images).
