@@ -13,7 +13,7 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
 - Integrated data fusion between WiFi signals and captured video from the router and cameras by developing these Linux toolkit codes.
 - Responsible for data fusion, signal processing, and configuring the project's software and hardware.
 - Constructed a Teacher-Student approach to detect and track objects beyond walls and obstacles.
-- Wrote papers for the [Winter Conference on Korea Information and Communications Society (KICS)] (https://conf.kics.or.kr/) titled "*Collection and Analysis of CSI in IEEE 802.11n Wireless LAN Environments for WiFi Signal-Based Human Mobility Detection (special session)*" and "*Design and Implementation of a Multi-Modal Learning Model for RF-Based Object Tracking Methods(recent results)*".
+- Wrote papers for the [Winter Conference on Korea Information and Communications Society (KICS)](https://conf.kics.or.kr/) titled "*Collection and Analysis of CSI in IEEE 802.11n Wireless LAN Environments for WiFi Signal-Based Human Mobility Detection (special session)*" and "*Design and Implementation of a Multi-Modal Learning Model for RF-Based Object Tracking Methods(recent results)*".
 
 #### [Jungtae Kang (Undergraduate student, Project follower)](https://kangjeongtae.com/)
 - Supporting the generation of CSI samples and Camera images.
