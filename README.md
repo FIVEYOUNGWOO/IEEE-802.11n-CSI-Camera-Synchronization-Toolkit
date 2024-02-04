@@ -9,14 +9,14 @@ The code presented here comprises a modified and merged version of the Linux ker
 Additionally, initial toolkit issues have been discussed among mobility detection researchers using WiFi signals and Channel State Information (CSI). To this end, we provide a calculation function **newly_csi_analyzer.m** of amplitude and phase, and signal processing from the acquired CSI samples. Herein, I referred to novel approaches [DensePose From WiFi](https://arxiv.org/abs/2301.00250) and [Can WiFi Estimate Person Pose?](https://arxiv.org/abs/1904.00277).
 
 # Project Members
-#### [Youngwoo Oh (M.S. student, Project leader from May 2023 to Feb. 2024 (for 9 months)](https://ohyoungwoo.com/)
-- Integrated data fusion between WiFi signals and captured video from the router and camera by developing these Linux toolkit codes.
-- Responsible for signal processing and project SW and HW configuration.
-- Constructed a Teacher-Student approach to detect and track beyond walls and obstacles.
+#### [Youngwoo Oh (M.S. student, Project leader from May 2023 to Feb. 2024 (for 9 months))](https://ohyoungwoo.com/)
+- Integrated data fusion between WiFi signals and captured video from the router and cameras by developing these Linux toolkit codes.
+- Responsible for data fusion, signal processing, and configuring the project's software and hardware.
+- Constructed a Teacher-Student approach to detect and track objects beyond walls and obstacles.
+- Wrote papers for the [Winter Conference on Korea Information and Communications Society (KICS)] (https://conf.kics.or.kr/) titled "*Collection and Analysis of CSI in IEEE 802.11n Wireless LAN Environments for WiFi Signal-Based Human Mobility Detection*" and "*Design and Implementation of a Multi-Modal Learning Model for RF-Based Object Tracking Methods*".
 
 #### [Jungtae Kang (Undergraduate student, Project follower)](https://kangjeongtae.com/)
 - Supporting the generation of CSI samples and Camera images.
-- Writing [Winter Conference on Korea Information and Communications Society (KICS) conference](https://conf.kics.or.kr/) papers named "*Collection and analysis of CSI in IEEE 802.11n wireless LAN environment for WiFi signal-based human mobility detection*".
 - In his future research, he will follow up on this "*Novel multi-modal approaches-based object detection/tracking/recognition methods*".
   
 #### Islam Helemy (Ph.D. student, Project member)
