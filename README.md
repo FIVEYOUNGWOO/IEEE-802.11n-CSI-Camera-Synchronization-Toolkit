@@ -12,7 +12,7 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
 #### [Youngwoo Oh (M.S. student, Project leader from May 2023 to Feb. 2024 (for 9 months))](https://ohyoungwoo.com/)
 - Integrated data fusion between WiFi signals and captured video from the router and cameras by developing these Linux toolkit codes.
 - Responsible for data fusion, signal processing, and configuring the project's software and hardware.
-- Constructed a Teacher-Student approach to detect and track objects beyond walls and obstacles.
+- Reproduced a Teacher-Student approach to robustly detect and track objects beyond walls and obstacles.
 - Wrote papers for the [2024 Winter Conference on Korea Information and Communications Society (KICS)](https://conf.kics.or.kr/) titled "*Collection and Analysis of CSI in IEEE 802.11n Wireless LAN Environments for WiFi Signal-Based Human Mobility Detection (special session)*" and "*Design and Implementation of a Multi-Modal Learning Model for RF-Based Object Tracking Methods(recent results)*".
 
 #### [Jungtae Kang (Undergraduate student, Project follower)](https://kangjeongtae.com/)
@@ -113,7 +113,7 @@ sudo ln -s iwlwifi-5000-2.ucode.sigcomm2010 /lib/firmware/iwlwifi-5000-2.ucode
 make -C CSI-Camera-Synchronization-Toolkit/supplementary/netlink
 ```
 
-## (7). Unzip OpenCV for utlizing the USB camera:
+## (7). Unzip OpenCV to utilize the USB camera:
 ```ruby
 cd CSI-Camera-Synchronization-Toolkit/camera_tool
 ```
