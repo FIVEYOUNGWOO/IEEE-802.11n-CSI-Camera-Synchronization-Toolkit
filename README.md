@@ -1,6 +1,6 @@
 # IEEE-802.11n-CSI-Camera-Synchronization-Toolkit
 * This repository is a part of a WiFi signal-based human detection and motion estimation project.
-* The goal of our research is to develop technology to recognize and track objects beyond walls using solely WiFi signals in the IEEE standards.
+* The goal of our research is to develop technology to recognize and track objects beyond walls utilizing WiFi signals in the IEEE standards.
   
 This repository's purpose is to support building the CSI-enabled **TP-Link AC1750** Wi-Fi drivers for Intel Wireless Link **Intel 5300 NIC** adapters on Linux distributions with **Unbuntu 14.01** versions. At this point, this code has been tested on Ubuntu **14.01**, **16.04**, and **18.04**.
 
