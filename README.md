@@ -1,7 +1,9 @@
 # IEEE-802.11n-CSI-Camera-Synchronization-Toolkit
-* This repository is a part of a WiFi signal-based human detection and motion estimation project.
-* The goal of our research is to develop technology to recognize and track objects beyond walls utilizing WiFi signals in the IEEE standards.
-  
+* This repository is part of an early-stage WiFi and camera data fusion-based human detection and motion estimation project.
+* The goal of our research is to develop a multimodal-based computer vision technology to detect and track objects beyond walls by adding IEEE 802.11 standard WiFi signals.
+* A multimodal approach that additionally utilizes WiFi signals can complement problems such as obstacles and object obscuration that occur in existing camera-based security and computer vision through the radio frequency (RF) signal characteristics.
+* I hope that this approach and research will be further activated as a practical way to prevent crime in areas where CCTV deployment is restricted to protect personal information.
+
 This repository's purpose is to support building the CSI-enabled **TP-Link AC1750** Wi-Fi drivers for Intel Wireless Link **Intel 5300 NIC** adapters on Linux distributions with **Unbuntu 14.01** versions. At this point, this code has been tested on Ubuntu **14.01**, **16.04**, and **18.04**.
 
 The code presented here comprises a modified and merged version of the Linux kernel, such as the firmware command, and error lines of the original baseline. The modifications were made by examining the code provided by [dhalperi/linux-80211n-csitool](https://github.com/dhalperi/linux-80211n-csitool) and adapting them to more recent Linux kernel versions **- iwlwifi** and **wlp1s0** modules. The building and installation instructions were taken from [the original Linux 802.11n CSI Tool website](https://dhalperi.github.io/linux-80211n-csitool/) and adapted accordingly. Moreover, I referred to the synchronization method between CSI and Camera from [CSI-Tool-Camera-Shooting](https://github.com/qiyinghua/CSI-Tool-Camera-Shooting).
@@ -10,10 +12,11 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
 
 # Project Members
 #### [Youngwoo Oh (M.S. student, Project leader from May 2023 to Feb. 2024 (for 9 months))](https://ohyoungwoo.com/)
-- Integrated data fusion between WiFi signals and captured video from the router and cameras by developing these Linux toolkit codes.
-- Responsible for data fusion, signal processing, and configuring the project's software and hardware.
-- Reproduced a Teacher-Student approach to robustly detect and track objects beyond walls and obstacles.
-- Wrote papers for the [2024 Winter Conference on Korea Information and Communications Society (KICS)](https://conf.kics.or.kr/) titled "*Collection and Analysis of CSI in IEEE 802.11n Wireless LAN Environments for WiFi Signal-Based Human Mobility Detection (special session)*" and "*Design and Implementation of a Multi-Modal Learning Model for RF-Based Object Tracking Methods(recent results)*".
+- Integrated data fusion between WiFi signals and captured video from the router and cameras by developing the [Linux toolkit codes](https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit).
+- Responsible for data fusion and SW/HW configuration and Produced a Teacher-Student approach to detect and track objects beyond walls and obstacles.
+- Wrote papers for the [2024 Winter Conference on Korea Information and Communications Society (KICS)](https://conf.kics.or.kr/) titled "*Collection and Analysis of CSI in IEEE 802.11n Wireless LAN Environments for WiFi Signal-Based Human Mobility Detection (special session)*" and "*Design and Implementation of a MultiModal Learning Model for RF-Based Object Tracking Methods (recent results)*".
+- Wrote 2023 and 2024 NRF R&D proposals related to this project. Our team plans to "*multiple edge-based multimodal federated learning approaches*" to expand this project with [Prof. Ramesh Rao](https://scholar.google.co.kr/citations?user=l-WGj3AAAAAJ&hl=ko&oi=ao) from [Qualcomm institue](https://qi.ucsd.edu/about/leadership/).
+- Expect to extend the federated-multimodal approach get benefit from a diversity of data-paired samples, training efficiency, and zero-configuration on similar scenarios and space. Suggested our future work and planning such as cloud-edge architecture-based federated multimodal learning, multiple Teacher-Student network AI modeling, and computing board-based edge device configuration to our team, where we considered a [UP Squared board](https://up-board.org/up/specifications/)-based edge devices, which it can support a compatible Intel WiFi LAN 5300.
 
 #### [Jungtae Kang (Undergraduate student, Project follower)](https://kangjeongtae.com/)
 - Supporting the generation of CSI samples and Camera images.
