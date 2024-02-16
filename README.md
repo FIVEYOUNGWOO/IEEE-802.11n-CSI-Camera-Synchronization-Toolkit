@@ -32,8 +32,8 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
 - Supporting the generation of CSI samples and Camera images.
 - In his future research, he will follow up on this "*Novel multi-modal approaches-based object detection/tracking/recognition methods*".
 
-# Toolkit Demonstration
-- The demonstration video is uploaded to [YouTube channel](https://www.youtube.com/watch?v=X-kNQRrQUlE).
+# Experiment configuration
+- The toolkit demonstration video is uploaded to [YouTube channel](https://www.youtube.com/watch?v=X-kNQRrQUlE).
 
 <table>
   <tr>
@@ -239,8 +239,8 @@ Open another kernel terminal, where ping testing is a way to encourage the colle
 ping 192.xxx.xx.xx -i 0.3
 ```
 
-# Analysis of the correlation between WiFi signals and human posture
-- The experimental results show that the WiFi signal features change according to human postures. In particular, it can be seen that the difference in phase values between the standing and sitting postures occurs more clearly. In other words, the different signal features enable the utilization of training data for accurate object detection/tracking and pose estimation.
+# WiFi signals and human posture correlation
+- The experimental results demonstrate that WiFi signal characteristics vary according to human postures. Specifically, the difference in phase values between standing and sitting postures is more pronounced. This suggests that the distinct signal features can be employed for accurately training multimodal deep learning models for object detection, tracking, and pose estimation without solely relying on vision information.
 
 <table>
   <tr>
