@@ -10,28 +10,6 @@ The code presented here comprises a modified and merged version of the Linux ker
 
 Additionally, initial toolkit issues have been discussed among mobility detection researchers using WiFi signals and Channel State Information (CSI). To this end, we provide a calculation function **newly_csi_analyzer.m** of amplitude and phase, and signal processing from the acquired CSI samples. Herein, I referred to novel approaches [DensePose From WiFi](https://arxiv.org/abs/2301.00250) and [Can WiFi Estimate Person Pose?](https://arxiv.org/abs/1904.00277).
 
-# Project Members
-#### [Youngwoo Oh](https://ohyoungwoo.com/) (M.S. student, Project leader from May 2023 to Feb. 2024 (for 10 months))
-- Integrated data fusion between WiFi signals and captured video from the router and cameras by developing the [Linux toolkit codes](https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit).
-- Responsible for data fusion and SW/HW configuration and Produced a Teacher-Student approach to detect and track objects beyond walls and obstacles.
-- Wrote papers for the [2024 Winter Conference on Korea Information and Communications Society (KICS)](https://conf.kics.or.kr/) titled "*Collection and Analysis of CSI in IEEE 802.11n Wireless LAN Environments for WiFi Signal-Based Human Mobility Detection (special session)*" and "*Design and Implementation of a MultiModal Learning Model for RF-Based Object Tracking Methods (recent results)*".
-- Wrote 2023 and 2024 NRF R&D proposals related to this project. Our team plans to "*multiple edge-based multimodal federated learning approaches*" to expand this project with [Prof. Ramesh Rao](https://scholar.google.co.kr/citations?user=l-WGj3AAAAAJ&hl=ko&oi=ao) from [Qualcomm institue](https://qi.ucsd.edu/about/leadership/).
-- Expect to extend the federated-multimodal approach get benefit from a diversity of data-paired samples, training efficiency, and zero-configuration on similar scenarios and space. Suggested our future work and planning such as cloud-edge architecture-based federated multimodal learning, multiple Teacher-Student network AI modeling, and computing board-based edge device configuration to our team, where we considered a [UP Squared board](https://up-board.org/up/specifications/)-based edge devices.
-  
-#### Islam Helemy (Ph.D. student, Project member)
-- Responsible for the development of the Multi-modal AI and the pre-processing to generate training data pairs (CSI samples-captured images).
-- He will receive a *project leader* position on this future project after Mar. 2024.
-
-#### Iftikhar Ahmad (Ph.D. student, Project member)
-- Focused on developing the Teacher network in the multi-modal AI model.
-
-#### Manal Mosharaf (M.S. student, Project member)
-- Engaged in developing the Student network in the multi-modal AI model.
-
-#### [Jungtae Kang](https://kangjeongtae.com/) (Undergraduate student, Project follower)
-- Supporting the generation of CSI samples and Camera images.
-- In his future research, he will follow up on this "*Novel multi-modal approaches-based object detection/tracking/recognition methods*".
-
 # Experiment configuration
 - The toolkit demonstration video is uploaded to [YouTube channel](https://www.youtube.com/watch?v=X-kNQRrQUlE).
 
@@ -58,6 +36,28 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
     <td><img src="/README_images/sitdown_plot.png" width="300" height="180"/></td>
   </tr>
 </table>
+
+# Project Members
+#### [Youngwoo Oh](https://ohyoungwoo.com/) (M.S. student, Project leader from May 2023 to Feb. 2024 (for 10 months))
+- Integrated data fusion between WiFi signals and captured video from the router and cameras by developing the [Linux toolkit codes](https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit).
+- Responsible for data fusion and SW/HW configuration and Produced a Teacher-Student approach to detect and track objects beyond walls and obstacles.
+- Wrote papers for the [2024 Winter Conference on Korea Information and Communications Society (KICS)](https://conf.kics.or.kr/) titled "*Collection and Analysis of CSI in IEEE 802.11n Wireless LAN Environments for WiFi Signal-Based Human Mobility Detection (special session)*" and "*Design and Implementation of a MultiModal Learning Model for RF-Based Object Tracking Methods (recent results)*".
+- Wrote 2023 and 2024 NRF R&D proposals related to this project. Our team plans to "*multiple edge-based multimodal federated learning approaches*" to expand this project with [Prof. Ramesh Rao](https://scholar.google.co.kr/citations?user=l-WGj3AAAAAJ&hl=ko&oi=ao) from [Qualcomm institue](https://qi.ucsd.edu/about/leadership/).
+- Expect to extend the federated-multimodal approach get benefit from a diversity of data-paired samples, training efficiency, and zero-configuration on similar scenarios and space. Suggested our future work and planning such as cloud-edge architecture-based federated multimodal learning, multiple Teacher-Student network AI modeling, and computing board-based edge device configuration to our team, where we considered a [UP Squared board](https://up-board.org/up/specifications/)-based edge devices.
+  
+#### Islam Helemy (Ph.D. student, Project member)
+- Responsible for the development of the Multi-modal AI and the pre-processing to generate training data pairs (CSI samples-captured images).
+- He will receive a *project leader* position on this future project after Mar. 2024.
+
+#### Iftikhar Ahmad (Ph.D. student, Project member)
+- Focused on developing the Teacher network in the multi-modal AI model.
+
+#### Manal Mosharaf (M.S. student, Project member)
+- Engaged in developing the Student network in the multi-modal AI model.
+
+#### [Jungtae Kang](https://kangjeongtae.com/) (Undergraduate student, Project follower)
+- Supporting the generation of CSI samples and Camera images.
+- In his future research, he will follow up on this "*Novel multi-modal approaches-based object detection/tracking/recognition methods*".
 
 # 1. Installation instructions of integrated CSI toolkit
 ## (1). Kernel version:
