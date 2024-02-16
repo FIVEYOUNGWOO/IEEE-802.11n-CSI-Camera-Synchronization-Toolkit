@@ -236,9 +236,6 @@ ping 192.xxx.xx.xx -i 0.3
 # Analysis of the correlation between WiFi signals and human posture
 - The experimental results show that the WiFi signal features change according to human postures. In other words, the different signal features enable the utilization of training data for accurate object detection/tracking and pose estimation.
 
-![hands-up pose](/README_images/handsup.jpg) ![stand-up pose](/README_images/standsup.jpg) ![sit-down pose](/README_images/sitdown.jpg)
-![hands-up plot](/README_images/handsup_plot.png) ![stand-up plot](/README_images/standup_plot.png) ![sit-down plot](/README_images/sitdown_plot.png)
-
 <table>
   <tr>
     <td><img src="/README_images/handsup.jpg" width="300"/></td>
