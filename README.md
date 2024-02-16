@@ -236,16 +236,17 @@ ping 192.xxx.xx.xx -i 0.3
 # Analysis of the correlation between WiFi signals and human posture
 - The experimental results show that the WiFi signal features change according to human postures. In other words, the different signal features enable the utilization of training data for accurate object detection/tracking and pose estimation.
 
-<table>
+<table style="border-collapse: collapse; border: 0;">
   <tr>
-    <td><img src="/README_images/handsup.jpg" width="300"/></td>
-    <td><img src="/README_images/standsup.jpg" width="300"/></td>
-    <td><img src="/README_images/sitdown.jpg" width="300"/></td>
+    <td style="border: 0;"><img src="/README_images/handsup.jpg" width="300"/></td>
+    <td style="border: 0;"><img src="/README_images/standsup.jpg" width="300"/></td>
+    <td style="border: 0;"><img src="/README_images/sitdown.jpg" width="300"/></td>
   </tr>
   <tr>
-    <td><img src="/README_images/handsup_plot.png" width="300"/></td>
-    <td><img src="/README_images/standup_plot.png" width="300"/></td>
-    <td><img src="/README_images/sitdown_plot.png" width="300"/></td>
+    <td style="border: 0;"><img src="/README_images/handsup_plot.png" width="300"/></td>
+    <td style="border: 0;"><img src="/README_images/standup_plot.png" width="300"/></td>
+    <td style="border: 0;"><img src="/README_images/sitdown_plot.png" width="300"/></td>
   </tr>
 </table>
+
 
