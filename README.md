@@ -37,9 +37,9 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
 
 <table>
   <tr>
-    <td><img src="/README_images/configulation 1.jpg" width="300" height="200"/></td>
-    <td><img src="/README_images/configulation 2.jpg" width="300" height="200"/></td>
-    <td><img src="/README_images/configulation 3.jpg" width="300" height="200"/></td>
+    <td><img src="/README_images/configulation 1.jpg" width="300" height="180"/></td>
+    <td><img src="/README_images/configulation 2.jpg" width="300" height="180"/></td>
+    <td><img src="/README_images/configulation 3.jpg" width="300" height="180"/></td>
   </tr>
 </table>
 
@@ -244,13 +244,13 @@ ping 192.xxx.xx.xx -i 0.3
 
 <table>
   <tr>
-    <td><img src="/README_images/handsup.jpg" width="300"/></td>
-    <td><img src="/README_images/standsup.jpg" width="300"/></td>
-    <td><img src="/README_images/sitdown.jpg" width="300"/></td>
+    <td><img src="/README_images/handsup.jpg" width="300" height="180"/></td>
+    <td><img src="/README_images/standsup.jpg" width="300" height="180"/></td>
+    <td><img src="/README_images/sitdown.jpg" width="300" height="180"/></td>
   </tr>
   <tr>
-    <td><img src="/README_images/handsup_plot.png" width="300"/></td>
-    <td><img src="/README_images/standup_plot.png" width="300"/></td>
-    <td><img src="/README_images/sitdown_plot.png" width="300"/></td>
+    <td><img src="/README_images/handsup_plot.png" width="300" height="180"/></td>
+    <td><img src="/README_images/standup_plot.png" width="300" height="180"/></td>
+    <td><img src="/README_images/sitdown_plot.png" width="300" height="180"/></td>
   </tr>
 </table>
