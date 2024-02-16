@@ -35,7 +35,13 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
 # Toolkit Demonstration
 - The demonstration video is uploaded to [YouTube channel](https://www.youtube.com/watch?v=X-kNQRrQUlE).
 
-![159](https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/assets/96539912/7b9c8e9a-9d14-4281-94cc-a61122007087)
+<table>
+  <tr>
+    <td><img src="/README_images/configulation 1.jpg" width="300"/></td>
+    <td><img src="/README_images/configulation 2.jpg" width="300"/></td>
+    <td><img src="/README_images/configulation 3.jpg" width="300"/></td>
+  </tr>
+</table>
 
 # 1. Installation instructions of integrated CSI toolkit
 ## (1). Kernel version:
@@ -236,15 +242,15 @@ ping 192.xxx.xx.xx -i 0.3
 # Analysis of the correlation between WiFi signals and human posture
 - The experimental results show that the WiFi signal features change according to human postures. In particular, it can be seen that the difference in phase values between the standing and sitting postures occurs more clearly. In other words, the different signal features enable the utilization of training data for accurate object detection/tracking and pose estimation.
 
-<table style="border-collapse: collapse; border: 0;">
+<table>
   <tr>
-    <td style="border: 0;"><img src="/README_images/handsup.jpg" width="300"/></td>
-    <td style="border: 0;"><img src="/README_images/standsup.jpg" width="300"/></td>
-    <td style="border: 0;"><img src="/README_images/sitdown.jpg" width="300"/></td>
+    <td><img src="/README_images/handsup.jpg" width="300"/></td>
+    <td><img src="/README_images/standsup.jpg" width="300"/></td>
+    <td><img src="/README_images/sitdown.jpg" width="300"/></td>
   </tr>
   <tr>
-    <td style="border: 0;"><img src="/README_images/handsup_plot.png" width="300"/></td>
-    <td style="border: 0;"><img src="/README_images/standup_plot.png" width="300"/></td>
-    <td style="border: 0;"><img src="/README_images/sitdown_plot.png" width="300"/></td>
+    <td><img src="/README_images/handsup_plot.png" width="300"/></td>
+    <td><img src="/README_images/standup_plot.png" width="300"/></td>
+    <td><img src="/README_images/sitdown_plot.png" width="300"/></td>
   </tr>
 </table>
