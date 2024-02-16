@@ -43,6 +43,22 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
   </tr>
 </table>
 
+# WiFi signals and human posture correlation
+- The experimental results demonstrate that WiFi signal characteristics vary according to human postures. Specifically, the difference in phase values between standing and sitting postures is more pronounced. This suggests that the distinct signal features can be employed for accurately training multimodal deep learning models for object detection, tracking, and pose estimation without solely relying on vision information.
+
+<table>
+  <tr>
+    <td><img src="/README_images/handsup.jpg" width="300" height="180"/></td>
+    <td><img src="/README_images/standsup.jpg" width="300" height="180"/></td>
+    <td><img src="/README_images/sitdown.jpg" width="300" height="180"/></td>
+  </tr>
+  <tr>
+    <td><img src="/README_images/handsup_plot.png" width="300" height="180"/></td>
+    <td><img src="/README_images/standup_plot.png" width="300" height="180"/></td>
+    <td><img src="/README_images/sitdown_plot.png" width="300" height="180"/></td>
+  </tr>
+</table>
+
 # 1. Installation instructions of integrated CSI toolkit
 ## (1). Kernel version:
 Before proceeding further, you need to check the version of your kernel. It should be **4.15**, otherwise, the commands below won't work. The following command will print that information:
@@ -238,19 +254,3 @@ Open another kernel terminal, where ping testing is a way to encourage the colle
 ```ruby
 ping 192.xxx.xx.xx -i 0.3
 ```
-
-# WiFi signals and human posture correlation
-- The experimental results demonstrate that WiFi signal characteristics vary according to human postures. Specifically, the difference in phase values between standing and sitting postures is more pronounced. This suggests that the distinct signal features can be employed for accurately training multimodal deep learning models for object detection, tracking, and pose estimation without solely relying on vision information.
-
-<table>
-  <tr>
-    <td><img src="/README_images/handsup.jpg" width="300" height="180"/></td>
-    <td><img src="/README_images/standsup.jpg" width="300" height="180"/></td>
-    <td><img src="/README_images/sitdown.jpg" width="300" height="180"/></td>
-  </tr>
-  <tr>
-    <td><img src="/README_images/handsup_plot.png" width="300" height="180"/></td>
-    <td><img src="/README_images/standup_plot.png" width="300" height="180"/></td>
-    <td><img src="/README_images/sitdown_plot.png" width="300" height="180"/></td>
-  </tr>
-</table>
