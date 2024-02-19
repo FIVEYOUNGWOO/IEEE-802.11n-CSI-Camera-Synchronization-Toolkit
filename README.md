@@ -55,7 +55,7 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
 - Engaged in developing the Student network in the multi-modal AI model.
 
 #### [Jungtae Kang](https://kangjeongtae.com/) (Undergraduate student, Project follower)
-- Supporting the generation of CSI samples and Camera images.
+- Supporting the generation of CSI samples & Camera images.
 - In his future research, he will follow up on this "*Novel multi-modal approaches-based object detection/tracking/recognition methods*".
 
 # 1. Installation instructions of integrated CSI toolkit
