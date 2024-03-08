@@ -67,8 +67,7 @@ uname -r
 ```ruby
 sudo apt-get install build-essential linux-headers-$(uname -r) git-core
 ```
-```ruby![159](https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/assets/96539912/d66d3979-6ddf-4259-a843-ba61901eedcc)
-
+```ruby
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 ```
 ```ruby
