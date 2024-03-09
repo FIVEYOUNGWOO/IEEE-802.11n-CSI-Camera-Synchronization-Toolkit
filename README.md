@@ -2,9 +2,8 @@
 * This repository is part of an early-stage WiFi and camera data fusion-based human detection and motion estimation project.
 * The goal of our research is to develop a multimodal-based computer vision technology to detect and track objects beyond walls by adding IEEE 802.11 standard WiFi signals.
 * A multimodal approach that additionally utilizes WiFi signals can complement problems such as obstacles and object obscuration that occur in existing camera-based security and computer vision through the radio frequency (RF) signal characteristics.
-* I hope that this approach and research will be further activated as a practical way to prevent crime in areas where CCTV deployment is restricted to protect personal information.
 
-This repository's purpose is to support building the CSI-enabled **TP-Link AC1750** Wi-Fi drivers for **Intel 5300 NIC** adapters on Linux distributions with **Unbuntu 14.01** versions. At this point, this code has been tested on Ubuntu **14.01**, **16.04**, and **18.04**.
+This repository's purpose is to support building the CSI-enabled **TP-Link AC1750** Wi-Fi drivers for **Intel 5300 NIC** adapters on Linux distributions with **Ubuntu 14.01** versions. This code has been tested on Ubuntu **14.01**, **16.04**, and **18.04**, where we recommend setting up the CSI toolkit on the **Ubuntu 18.04 version**.
 
 The code presented here comprises a modified and merged version of the Linux kernel, such as the firmware command, and error lines of the original baseline. The modifications were made by examining the code provided by [dhalperi/linux-80211n-csitool](https://github.com/dhalperi/linux-80211n-csitool) and adapting them to more recent Linux kernel versions **- iwlwifi** and **wlp1s0** modules. The building and installation instructions were taken from [the original Linux 802.11n CSI Tool website](https://dhalperi.github.io/linux-80211n-csitool/) and adapted accordingly. Moreover, I referred to the synchronization method between CSI and Camera from [CSI-Tool-Camera-Shooting](https://github.com/qiyinghua/CSI-Tool-Camera-Shooting).
 
@@ -73,7 +72,7 @@ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 ```ruby
 sudo apt-get update
 ```
-If you don't need to install this gcc version, skip a below line :)
+If you don't need to install this gcc version, skip the below line :)
 ```ruby
 sudo apt-get install gcc-8 g++-8
 ```
@@ -106,7 +105,7 @@ CSITOOL_KERNEL_TAG=csitool-$(uname -r | cut -d . -f 1-2)
 git clone https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit.git
 ```
 ```ruby
-cd CSI-Camera-Synchronization-Toolkit/linux-80211n-csitool
+cd IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/linux-80211n-csitool
 ```
 ```ruby
 git checkout ${CSITOOL_KERNEL_TAG}
@@ -123,7 +122,7 @@ sudo make -C /lib/modules/$(uname -r)/build M=$(pwd)/drivers/net/wireless/iwlwif
 for file in /lib/firmware/iwlwifi-5000-*.ucode; do sudo mv $file $file.orig; done
 ```
 ```ruby
-sudo cp CSI-Camera-Synchronization-Toolkit/supplementary/firmware/iwlwifi-5000-2.ucode.sigcomm2010 /lib/firmware/
+sudo cp IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/supplementary/firmware/iwlwifi-5000-2.ucode.sigcomm2010 /lib/firmware/
 ```
 ```ruby
 sudo ln -s iwlwifi-5000-2.ucode.sigcomm2010 /lib/firmware/iwlwifi-5000-2.ucode
@@ -131,12 +130,12 @@ sudo ln -s iwlwifi-5000-2.ucode.sigcomm2010 /lib/firmware/iwlwifi-5000-2.ucode
 
 ## (6). Build the userspace logging tool:
 ```ruby
-make -C CSI-Camera-Synchronization-Toolkit/supplementary/netlink
+make -C IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/supplementary/netlink
 ```
 
 ## (7). Unzip OpenCV to utilize the USB camera:
 ```ruby
-cd CSI-Camera-Synchronization-Toolkit/camera_tool
+cd IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/camera_tool
 ```
 ```ruby
 unzip opencv-2.4.13.6.zip
@@ -183,7 +182,7 @@ sudo reboot
 
 ## (10). Compile user-application:
 ```ruby
-cd CSI-Camera-Synchronization-Toolkit/supplementary/netlink
+cd IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/supplementary/netlink
 ```
 ```ruby
 sudo gedit /etc/ld.so.conf.d/opencv.conf
@@ -240,11 +239,11 @@ where the camera parameters constructed [*Camera ID*] [*Save Interval*] [*Auto E
 
 Open the first Linux kernel and write the below command:
 ```ruby
-cd CSI-Camera-Synchronization-Toolkit/supplementary/netlink/camera 0 1 0
+cd IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/supplementary/netlink/camera 0 1 0
 ```
 Open the second Linux kernel to execute 'log_to_file':
 ```ruby
-cd CSI-Camera-Synchronization-Toolkit/supplementary/netlink/log_to_file test.dat
+cd IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/supplementary/netlink/log_to_file test.dat
 ```
 Open another kernel terminal, where ping testing is a way to encourage the collection of more CSI samples:
 ```ruby
