@@ -127,7 +127,7 @@ cd IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/linux-80211n-csitool
 ```ruby
 git checkout ${CSITOOL_KERNEL_TAG}
 ```
-> **This command will not work unless the necessary steps are followed.** 
+> **This command will not work unless the necessary steps are followed.**  
 It only works with the files from the [https://github.com/spanev/linux-80211n-csitool](https://github.com/spanev/linux-80211n-csitool) repository, and there must be a tag for `csitool-4.15` in that repository.
 ```ruby
 make -C /lib/modules/$(uname -r)/build M=$(pwd)/drivers/net/wireless/iwlwifi modules
@@ -148,6 +148,7 @@ for file in /lib/firmware/iwlwifi-5000-*.ucode; do sudo mv $file $file.orig; don
 ```ruby
 sudo cp IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/supplementary/firmware/iwlwifi-5000-2.ucode.sigcomm2010 /lib/firmware/
 ```
+> **To execute this command successfully, you need to change the terminal's directory to 'home'.**  
 ```ruby
 sudo ln -s iwlwifi-5000-2.ucode.sigcomm2010 /lib/firmware/iwlwifi-5000-2.ucode
 ```
@@ -156,6 +157,7 @@ sudo ln -s iwlwifi-5000-2.ucode.sigcomm2010 /lib/firmware/iwlwifi-5000-2.ucode
 ```ruby
 make -C IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/supplementary/netlink
 ```
+> **To execute this command successfully, you need to change the terminal's directory to 'home'.**  
 
 ## (7). Unzip OpenCV to utilize the USB camera:
 ```ruby
@@ -164,6 +166,7 @@ cd IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/camera_tool
 ```ruby
 unzip opencv-2.4.13.6.zip
 ```
+> **After running the command, press the 'A' key to extract all the files.**  
 ```ruby
 cd opencv-2.4.13.6/install
 ```
