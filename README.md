@@ -116,7 +116,7 @@ sudo apt-get install gcc make linux-headers-$(uname -r) git-core
 ```ruby
 CSITOOL_KERNEL_TAG=csitool-$(uname -r | cut -d . -f 1-2)
 ```
-**No problem, but this step is not necessary.**  
+> **No problem, but this step is not necessary.**  
 The command is for setting up the environment and only works with the files from the [https://github.com/spanev/linux-80211n-csitool](https://github.com/spanev/linux-80211n-csitool) repository.
 ```ruby
 git clone https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit.git
@@ -127,7 +127,7 @@ cd IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/linux-80211n-csitool
 ```ruby
 git checkout ${CSITOOL_KERNEL_TAG}
 ```
-> **This command will not work unless the necessary steps are followed.**  
+> **This command will not work unless the necessary steps are followed.** 
 It only works with the files from the [https://github.com/spanev/linux-80211n-csitool](https://github.com/spanev/linux-80211n-csitool) repository, and there must be a tag for `csitool-4.15` in that repository.
 ```ruby
 make -C /lib/modules/$(uname -r)/build M=$(pwd)/drivers/net/wireless/iwlwifi modules
@@ -135,7 +135,8 @@ make -C /lib/modules/$(uname -r)/build M=$(pwd)/drivers/net/wireless/iwlwifi mod
 > **No problem, but prior steps are necessary!**  
 To execute this command successfully, you must overwrite all the files in the `IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/linux-80211n-csitool/drivers/net/wireless/` directory with the corresponding files from `spanev's linux-80211n-csitool/drivers/net/wireless/intel/` directory.
 
-Download the files from [https://github.com/spanev/linux-80211n-csitool](https://github.com/spanev/linux-80211n-csitool) and follow the instructions to overwrite the files as described above.
+
+> Download the files from [https://github.com/spanev/linux-80211n-csitool](https://github.com/spanev/linux-80211n-csitool) and follow the instructions to overwrite the files as described above.
 ```ruby
 sudo make -C /lib/modules/$(uname -r)/build M=$(pwd)/drivers/net/wireless/iwlwifi INSTALL_MOD_DIR=updates
 ```
