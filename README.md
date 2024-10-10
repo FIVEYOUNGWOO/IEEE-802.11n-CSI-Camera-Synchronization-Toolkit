@@ -189,6 +189,11 @@ sudo make install
 ```ruby
 sudo gedit /etc/ld.so.conf.d/opencv.conf
 ```
+> **When you run this command, a gedit (text editor) window will open.**  
+```ruby
+/usr/local/lib
+```
+> **Write the above content in the editor, then save the file.**  
 Then add the /usr/local/lib command to the file.
 ```ruby
 sudo ldconfig
@@ -196,13 +201,13 @@ sudo ldconfig
 ```ruby
 sudo gedit /etc/bash.bashrc
 ```
-Then add the following command to the end of the file:
+> **When you run this command, a gedit (text editor) window will open.**  
 ```ruby
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
-```
-```ruby
 export PKG_CONFIG_PATH
 ```
+> **Write the above content in the editor, then save the file.**  
+Then add the following command to the end of the file:
 ```ruby
 sudo reboot
 ```
@@ -214,6 +219,11 @@ cd IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/supplementary/netlink
 ```ruby
 sudo gedit /etc/ld.so.conf.d/opencv.conf
 ```
+> **When you run this command, a gedit (text editor) window will open.**  
+```ruby
+/usr/local/lib
+```
+> **Write the above content in the editor, then save the file.**  
 Then add the /usr/local/lib command to the file.
 ```ruby
 make
