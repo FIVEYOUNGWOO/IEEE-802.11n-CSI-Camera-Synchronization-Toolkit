@@ -94,6 +94,29 @@ sudo apt update
 ls -l /usr/bin/gcc /usr/bin/g++
 ```
 
+**Now change the version of gcc/g++ to version 8:**
+
+```ruby
+sudo rm /usr/bin/gcc
+```
+> **No Problem… !**
+> 
+```ruby
+sudo rm /usr/bin/g++
+```
+> **No Problem… !**
+> 
+```ruby
+sudo ln -s /usr/bin/gcc-8 /usr/bin/gcc
+```
+> **No Problem… !**
+> 
+```ruby
+sudo ln -s /usr/bin/g++-8 /usr/bin/g++
+```
+> **No Problem… !**
+>
+
 ## (4). Build and install the modified wireless LAN driver:
 ```ruby
 sudo apt-get install gcc make linux-headers-$(uname -r) git-core
