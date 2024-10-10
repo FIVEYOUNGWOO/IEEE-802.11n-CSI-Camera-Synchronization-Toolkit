@@ -116,7 +116,7 @@ sudo apt-get install gcc make linux-headers-$(uname -r) git-core
 ```ruby
 CSITOOL_KERNEL_TAG=csitool-$(uname -r | cut -d . -f 1-2)
 ```
-> **No problem, but this step is not necessary.**  
+> **this step is not necessary.**  
 The command is for setting up the environment and only works with the files from the [https://github.com/spanev/linux-80211n-csitool](https://github.com/spanev/linux-80211n-csitool) repository.
 ```ruby
 git clone https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit.git
@@ -132,7 +132,7 @@ It only works with the files from the [https://github.com/spanev/linux-80211n-cs
 ```ruby
 make -C /lib/modules/$(uname -r)/build M=$(pwd)/drivers/net/wireless/iwlwifi modules
 ```
-> **No problem, but prior steps are necessary!**  
+> **prior steps are necessary!**  
 To execute this command successfully, you must overwrite all the files in the `IEEE-802.11n-CSI-Camera-Synchronization-Toolkit/linux-80211n-csitool/drivers/net/wireless/` directory with the corresponding files from `spanev's linux-80211n-csitool/drivers/net/wireless/intel/` directory.
 
 
