@@ -38,8 +38,8 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
 
 # Project Members
 #### [Youngwoo Oh](https://ohyoungwoo.com/) (M.S. student, Project leader from May 2023 to Feb. 2024 (for 10 months))
-- Integrated sensor fusion between the WiFi and captured image from the TP-Link router and cameras by developing the [Linux toolkit codes](https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit).
-- Responsible for sensor fusion and SW/HW configuration and produced a Teacher-Student approach to detect and track objects beyond walls and obstacles.
+- Integrated sensor fusion between the WiFi and captured image from the TP-Link router and USB camera by developing the [Linux toolkit codes](https://github.com/FIVEYOUNGWOO/IEEE-802.11n-CSI-Camera-Synchronization-Toolkit).
+- Responsible for sensor fusion and SW/HW configuration and produced a Teacher-Student architecture to detect and track objects beyond walls and obstacles.
 - Wrote papers for the [2024 Winter Conference on Korea Information and Communications Society (KICS)](https://conf.kics.or.kr/) titled "*Collection and Analysis of CSI in IEEE 802.11n Wireless LAN Environments for WiFi Signal-Based Human Mobility Detection*" and "*Design and Implementation of a MultiModal Learning Model for RF-Based Object Tracking Methods*".
   
 #### Islam Helemy (Ph.D. student, Project member)
