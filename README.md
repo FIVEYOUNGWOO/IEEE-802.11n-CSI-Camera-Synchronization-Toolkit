@@ -9,7 +9,7 @@ The code presented here comprises a modified and merged version of the Linux ker
 
 Additionally, initial toolkit issues have been discussed among mobility detection researchers using WiFi signals and CSI. To this end, we provide a calculation function **newly_csi_analyzer.m** of amplitude and phase, and signal processing from the acquired CSI samples. Herein, I referred to novel approaches [DensePose From WiFi](https://arxiv.org/abs/2301.00250) and [Can WiFi Estimate Person Pose?](https://arxiv.org/abs/1904.00277).
 
-# Experiment configuration
+# Desktop-Based Experimental Configuration (Pre-miniaturization)
 - The toolkit demonstration video is uploaded to [YouTube channel](https://www.youtube.com/watch?v=X-kNQRrQUlE).
 
 <table>
@@ -17,6 +17,17 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
     <td><img src="/README_images/configulation 1.jpg" width="300" height="180"/></td>
     <td><img src="/README_images/configulation 2.jpg" width="300" height="180"/></td>
     <td><img src="/README_images/configulation 3.jpg" width="300" height="180"/></td>
+  </tr>
+</table>
+
+# Miniaturization of H/W Setups for Portable Experimental Configuration
+* Our previous hardware setup consisted of a desktop-based configuration, which limited experimental flexibility in various environments. To this end, we miniaturized the conventional desktop-based setup into an embedded hardware system. We utilized an embedded board compatible with the Intel 5300 WLAN card and removed unnecessary S/W modules, such as real-time WiFi signal analysis, to reduce computational complexity. The experimental results demonstrated that our portable configuration can successfully acquire synchronized multimodal data pairs.
+
+<table>
+  <tr>
+    <td><img src="/README_images/configulation 1.png" width="300" height="300"/></td>
+    <td><img src="/README_images/portable_configuration.png" width="300" height="300"/></td>
+    <td><img src="/README_images/configulation_results.png" width="300" height="300"/></td>
   </tr>
 </table>
 
