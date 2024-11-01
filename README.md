@@ -25,9 +25,9 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
 
 <table>
   <tr>
-    <td><img src="/README_images/configulation 1.jpg" width="300" height="180"/></td>
-    <td><img src="/README_images/portable_configuration.png" width="300" height="180"/></td>
-    <td><img src="/README_images/configulation_results.png" width="300" height="180"/></td>
+    <td><img src="/README_images/configulation 1.jpg" width="300" height="220"/></td>
+    <td><img src="/README_images/portable_configuration.png" width="300" height="220"/></td>
+    <td><img src="/README_images/configulation_results.png" width="300" height="220"/></td>
   </tr>
 </table>
 
