@@ -1,9 +1,9 @@
 # IEEE-802.11n-CSI-Camera-Synchronization-Toolkit
 * This repository is part of an early-stage WiFi and camera data fusion-based human detection and motion estimation project.
 * Our research aims to develop a multiple modality-based computer vision technology to detect objects beyond walls by adding IEEE 802.11 standard WiFi signals.
-* A multimodal approach utilizing WiFi signals can complement problems such as obstacles and object obscuration that occur in existing camera-based security and computer vision through the radio frequency (RF) signal characteristics.
+* A multimodal approach utilizing WiFi signals can complement problems such as obstacles and object obscuration in existing camera-based security and computer vision through the radio frequency (RF) signal characteristics.
 
-This repository is to support building the channel state information (CSI)-enabled **TP-Link AC1750** Wi-Fi drivers for **Intel 5300 NIC** adapters on Linux distributions with **Ubuntu 14.01** versions. This code has been tested on Ubuntu **14.01**, **16.04**, and **18.04**, where we recommend setting up the CSI toolkit on the **Ubuntu 18.04 version**.
+This repository supports building the channel state information (CSI)-enabled **TP-Link AC1750** Wi-Fi drivers for **Intel 5300 NIC** adapters on Linux distributions with **Ubuntu 14.01** versions. This code has been tested on Ubuntu **14.01**, **16.04**, and **18.04**, where we recommend setting up the CSI toolkit on the **Ubuntu 18.04 version**.
 
 The code presented here comprises a modified and merged version of the Linux kernel, such as the firmware command, and error lines of the original baseline. The modifications were made by examining the code provided by [dhalperi/linux-80211n-csitool](https://github.com/dhalperi/linux-80211n-csitool) and adapting them to more recent Linux kernel versions **-iwlwifi** and **wlp1s0** wireless communication modules. The building and installation instructions were taken from [the original Linux 802.11n CSI Tool website](https://dhalperi.github.io/linux-80211n-csitool/) and adapted accordingly. Moreover, I referred to the synchronization method between CSI and Camera from [CSI-Tool-Camera-Shooting](https://github.com/qiyinghua/CSI-Tool-Camera-Shooting).
 
@@ -21,7 +21,7 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
 </table>
 
 # Miniaturization of H/W Setups for Portable Experimental Configuration
-* Our previous hardware setup consisted of a desktop-based configuration, which limited experimental flexibility in various environments. To this end, we miniaturized the conventional desktop-based setup into an embedded hardware system. We utilized an embedded board compatible with the Intel 5300 WLAN card and removed unnecessary S/W modules, such as real-time WiFi signal analysis, to reduce computational complexity. The experimental results demonstrated that our portable configuration can successfully acquire synchronized multimodal data pairs.
+* Our previous hardware setup consisted of a desktop-based configuration, which limited experimental flexibility in various environments. To this end, we miniaturized the conventional desktop-based setup into an embedded hardware system. We reduced computational and memory complexity by leveraging an embedded board(_Up-Squared Board_) compatible with the Intel 5300 WLAN card and eliminating unnecessary S/W modules such as various real-time WiFi signal analysis and visualization. The experimental results demonstrated that our portable configuration can successfully acquire synchronized multimodal data pairs.
 
 <table>
   <tr>
