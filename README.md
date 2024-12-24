@@ -21,7 +21,7 @@ Additionally, initial toolkit issues have been discussed among mobility detectio
 </table>
 
 # Miniaturization of H/W Setups for Portable Experimental Configuration
-* Our previous hardware setup consisted of a desktop-based configuration, which limited experimental flexibility in various environments. To this end, we miniaturized the conventional desktop-based setup into an embedded hardware system. We reduced computational and memory complexity by leveraging an embedded board(_Up-Squared Board_) compatible with the Intel 5300 WLAN card and eliminating unnecessary S/W modules such as various real-time WiFi signal analysis and visualization. The experimental results demonstrated that our portable configuration can successfully acquire synchronized multimodal data pairs.
+* Our previous hardware setup consisted of a desktop-based configuration, which limited experimental flexibility in various environments. To this end, we miniaturized the conventional desktop-based setup into an embedded hardware system. We reduced computational and memory complexity by leveraging an embedded board(_Up-Squared Board_) compatible with the Intel 5300 WLAN card and eliminating unnecessary S/W modules such as various real-time WiFi signal analysis and visualization processes. The experimental results demonstrated that our portable configuration can successfully acquire synchronized multimodal data pairs.
 
 <table>
   <tr>
