@@ -1,0 +1,16 @@
+# Teacher & Student Network Usage (Contribution by Manal Mosharaf)
+
+This document explains how the CSI toolkit was used to generate data for the Teacher and Student networks:
+
+1. **Data Collection:**  
+   Collected synchronized CSI-camera data using this toolkit.
+
+2. **Teacher Network:**  
+   Designed and trained the Teacher Network using the collected data.  
+   Responsible for model architecture, training, and evaluation.
+
+3. **Student Network:**  
+   Trained the Student Network to learn from the Teacher Network outputs.  
+   Preprocessing, model setup, and evaluation were performed using the dataset generated with this toolkit.
+
+> Note: The actual Teacher/Student network code is in a separate repository. This document clarifies the connection to the CSI toolkit.
