@@ -61,7 +61,9 @@ Researchers in the field of mobility detection using WiFi-CSI have discussed the
 - He will receive a *Project manager* position on this future project after Mar. 2024.
 
 #### [Manal Mosharaf](https://github.com/Manal-Mosharaf-01) (M.S. student, Project member)
-- Engaged in developing the Student network in the multi-modal AI model.
+- Collected synchronized CSI + camera data using this toolkit.
+- Teacher Network: designed, trained, evaluated on this dataset.
+- Student Network: trained to mimic Teacher outputs using the collected dataset.
 
 #### [Jungtae Kang](https://kangjeongtae.com/) (Undergraduate student, Project follower)
 - Supporting the generation of CSI samples and Camera [.
